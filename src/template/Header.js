@@ -26,14 +26,14 @@ function Header() {
               className="ms-1"
               size="lg"
             />
-            <span className="ms-2 h5">Shop</span>
+            <span className="ms-2 h5">Don alquiles</span>
           </Link>
 
           <div className={"navbar-collapse offcanvas-collapse " + (openedDrawer ? 'open' : '')}>
             <ul className="navbar-nav me-auto mb-lg-0">
               <li className="nav-item">
                 <Link to="/products" className="nav-link" replace onClick={changeNav}>
-                  Explore
+                  Explora
                 </Link>
               </li>
             </ul>
