@@ -13,11 +13,11 @@ function Landing() {
       <Banner />
       <div className="d-flex flex-column bg-white py-4">
         <p className="text-center px-5">
-          Dispóngase a pasar tiempo de recración en nuestras instalaciones en los horarios de atencion de lunes a domingo
+          Dispóngase a pasar tiempo de recreación en nuestras instalaciones en los horarios de atencion de lunes a domingo
         </p>
         <div className="d-flex justify-content-center">
           <Link to="/products" className="btn btn-primary" replace>
-            Ver disponibilidad
+            API
           </Link>
         </div>
       </div>
@@ -35,20 +35,29 @@ function Landing() {
           })}
         </div>
       </div>
-      <div className="d-flex flex-column bg-white py-4">
+      
+      <div id="contactenos" className="d-flex flex-column bg-white py-4">
         <h5 className="text-center mb-3">Sigue nuestras paginas</h5>
         <div className="d-flex justify-content-center">
+          
           <a href="!#" className="me-3">
+            <a href="https://facebook.com">
             <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+            </a>
           </a>
           <a href="!#">
+            <a href="https://instagram.com">
             <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+            </a>
           </a>
           <a href="!#" className="ms-3">
+            <a href="https://twitter.com">
             <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+            </a>
           </a>
         </div>
       </div>
+      
     </>
   );
 }

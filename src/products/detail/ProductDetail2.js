@@ -1,16 +1,15 @@
-import tejo from "../../../src/landing/tejo-1.jpeg";
-import RelatedProduct from "./RelatedProduct";
+import billar from "../../../src/landing/billar-0.jpg";
 import RelatedProduct2 from "./RelatedProduct2";
 import Ratings from "react-ratings-declarative";
 import { Link } from "react-router-dom";
 import ScrollToTopOnMount from "../../template/ScrollToTopOnMount";
+import RelatedProduct3 from "./RelatedProduct3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 const iconPath =
   "M18.571 7.221c0 0.201-0.145 0.391-0.29 0.536l-4.051 3.951 0.96 5.58c0.011 0.078 0.011 0.145 0.011 0.223 0 0.29-0.134 0.558-0.458 0.558-0.156 0-0.313-0.056-0.446-0.134l-5.011-2.634-5.011 2.634c-0.145 0.078-0.29 0.134-0.446 0.134-0.324 0-0.469-0.268-0.469-0.558 0-0.078 0.011-0.145 0.022-0.223l0.96-5.58-4.063-3.951c-0.134-0.145-0.279-0.335-0.279-0.536 0-0.335 0.346-0.469 0.625-0.513l5.603-0.815 2.511-5.078c0.1-0.212 0.29-0.458 0.547-0.458s0.446 0.246 0.547 0.458l2.511 5.078 5.603 0.815c0.268 0.045 0.625 0.179 0.625 0.513z";
 
-function ProductDetail() {
+function ProductDetail2() {
   function changeRating(newRating) {}
 
   return (
@@ -25,11 +24,11 @@ function ProductDetail() {
           </li>
           <li className="breadcrumb-item">
             <a className="text-decoration-none link-secondary" href="!#">
-              Canchas
+              Mesas
             </a>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
-            Canchas de Tejo y Mini tejo
+            Mesas de billar pool y billar tres bandas
           </li>
         </ol>
       </nav>
@@ -38,13 +37,13 @@ function ProductDetail() {
           <div className="image-vertical-scroller">
             <div className="d-flex flex-column">
               {Array.from({ length: 10 }, (_, i) => {
-                let selected = i !== 0 ? "opacity-6" : "";
+                let selected = i !== 1 ? "opacity-6" : "";
                 return (
                   <a key={i} href="!#">
                     <img
                       className={"rounded mb-2 ratio " + selected}
                       alt=""
-                      src={tejo}
+                      src={billar}
                     />
                   </a>
                 );
@@ -58,7 +57,7 @@ function ProductDetail() {
               <img
                 className="border rounded ratio ratio-1x1"
                 alt=""
-                src={tejo}
+                src={billar}
               />
             </div>
           </div>
@@ -89,8 +88,8 @@ function ProductDetail() {
 
         <div className="col-lg-5">
           <div className="d-flex flex-column h-100">
-            <h2 className="mb-1">Cancha de Tejo y Mini Tejo</h2>
-            <h4 className="text-muted mb-4">$30.000 Hora</h4>
+            <h2 className="mb-1">Mesas de billar Pool y billar tres bandas</h2>
+            <h4 className="text-muted mb-4">$4.000 Hora</h4>
 
             <div className="row g-3 mb-4">
               {/*<div className="col">
@@ -107,10 +106,10 @@ function ProductDetail() {
             <hr />
             <dl className="row">
               <dt className="col-sm-4">Código</dt>
-              <dd className="col-sm-8 mb-3">01</dd>
+              <dd className="col-sm-8 mb-3">02</dd>
 
               <dt className="col-sm-4">Categoria</dt>
-              <dd className="col-sm-8 mb-3">Tejo y Mini tejo</dd>
+              <dd className="col-sm-8 mb-3">Pool y tres bandas</dd>
 
               {/*<dt className="col-sm-4">Brand</dt>
               <dd className="col-sm-8 mb-3">iPhone X</dd>*/}
@@ -118,8 +117,8 @@ function ProductDetail() {
               {/*<dt className="col-sm-4">Manufacturer</dt>
               <dd className="col-sm-8 mb-3">Nillkin</dd>*/}
 
-              <dt className="col-sm-4">Tipo de cancha</dt>
-              <dd className="col-sm-8 mb-3">Cancha bajo techo y cancha sin techo</dd>
+              <dt className="col-sm-4">Tipo de mesa</dt>
+              <dd className="col-sm-8 mb-3">Mesa billar pool o Mesa billar 3 bandas</dd>
 
               <dt className="col-sm-4">Estatus</dt>
               <dd className="col-sm-8 mb-3">Disponible</dd>
@@ -151,11 +150,12 @@ function ProductDetail() {
             <hr />
             <p className="lead flex-shrink-0">
               <small>
-              El tejo es un deporte de competencia, en el cual se enfrentan jugadores en forma individual o conformando equipos. 
-              El juego consiste en lazar el tejo desde una cancha a la otra, con el objetivo de enterrarlo dentro del bocín, 
-              reventar una mecha o en su defecto, enterrarlo más cerca al bocín que los demás competidores.
-              el campo de tejo es de 19.5 metros de largo, por 2.5 metros de ancho. La distancia entre las canchas es de 17.5 metros;
-              el espacio definido para el lanzamiento es de 2.5 metros, a partir de la cancha.
+              Este juego se practica en una mesa de forma rectangular, realizada en madera y con un tapiz como superficie de juego.
+              Consiste en hacer rodar unas bolas de colores impulsadas con un taco, 
+              en algunos casos con el objetivo de meterlas en una serie de agujeros y en otras para hacer carambola entre ellas.
+              La mesa de pool tiene una medida de 2,13 m largo x 1,07 m ancho x 0,78 m alto,
+              con una superficie de juego de 193 x 96.5 cm aproximadamente
+
               </small>
             </p>
           </div>
@@ -169,7 +169,8 @@ function ProductDetail() {
           <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
             {Array.from({ length: 1 }, (_, i) => {
               return (
-                <><RelatedProduct key={i} percentOff={i % 2 === 0 ? 15 : null} /><RelatedProduct2 key={i} percentOff={i % 2 === 0 ? 15 : null} /></>
+                <><RelatedProduct2 key={i} percentOff={i % 2 === 0 ? 15 : null} /><RelatedProduct3 key={i} percentOff={i % 2 === 0 ? 15 : null} /></>
+
               );
             })}
           </div>
@@ -200,7 +201,6 @@ function ProductDetail() {
 
     </div>
   );
-  
 }
 
-export default ProductDetail;
+export default ProductDetail2;

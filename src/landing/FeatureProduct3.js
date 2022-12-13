@@ -15,7 +15,7 @@ function FeatureProduct3() {
             <h5 className="card-title text-center">Futbol 5 y 11 sintetico</h5>
             <p className="card-text text-center text-muted">$50.000 y $70.000 Hora</p>
             <div className="d-grid gap-2">
-              <Link to="/products/1" className="btn btn-outline-dark" replace>
+              <Link to="/products/3" className="btn btn-outline-dark" replace>
                 Detalles
               </Link>
             </div>

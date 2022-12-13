@@ -1,8 +1,8 @@
-import Image from "../../mesa-0.jpg";
+import Image from "../../../src/landing/fulvo-0.jpg";
 import { Link } from "react-router-dom";
 
-function RelatedProduct(props) {
-  const price = 4000;
+function RelatedProduct2(props) {
+  const price = 60000;
   let percentOff;
   let offPrice = `${price}$`;
 
@@ -40,7 +40,7 @@ function RelatedProduct(props) {
         />
         <div className="card-body">
           <h5 className="card-title text-center text-dark text-truncate">
-            Billar Pool o billar tres bandas
+            Futbol 11 o futbol 5
           </h5>
           <p className="card-text text-center text-muted">{offPrice}</p>
         </div>
@@ -49,4 +49,4 @@ function RelatedProduct(props) {
   );
 }
 
-export default RelatedProduct;
+export default RelatedProduct2;

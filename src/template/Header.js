@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+
 function Header() {
 
   const [openedDrawer, setOpenedDrawer] = useState(false)
@@ -15,9 +16,18 @@ function Header() {
       setOpenedDrawer(false)
     }
   }
+  
+  function handleScroll() {
+    window.scroll({
+      top: document.body.scrollHeight,
+      left: 0, 
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <header>
+      
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/" onClick={changeNav}>
@@ -42,6 +52,13 @@ function Header() {
                   API
                 </Link>
               </li>
+              
+              <li className="nav-item">
+                <Link className="nav-link" replace onClick={handleScroll}>
+                  Contactenos 
+                </Link>
+              </li>
+              
             </ul>
           </div>
 
